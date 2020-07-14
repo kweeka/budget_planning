@@ -1,0 +1,22 @@
+<div class="main_auth_container">
+    <div class="reg_form">
+        <h4>Авторизация</h4>
+        <div class="reg_form_input">
+            <form class="reg_form_input">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Email</mat-label>
+                    <input matInput #message [(ngModel)]="userEmail" [ngModelOptions]="{standalone: true}"/>
+                </mat-form-field>
+            </form>
+        </div>
+        <form class="reg_form_input">
+            <mat-form-field class="example-full-width">
+                <mat-label>Пароль</mat-label>
+                <input matInput #message maxlength="30" [(ngModel)]="userPassword" [ngModelOptions]="{standalone: true}"/>
+            </mat-form-field>
+        </form>
+        <section>
+            <button mat-stroked-button color="primary" class="button_reg" (click)="authorization()">ОК</button>
+        </section>
+    </div>
+</div>

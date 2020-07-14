@@ -1,0 +1,49 @@
+.main_reg_container {
+    padding: 0px 15px;
+    width: 316px;
+    margin: 100px auto;
+    height: 300px;
+    background-color: #a57fc512;
+}
+
+.main_auth_container {
+    padding: 0px 15px;
+    width: 316px;
+    margin: 100px auto;
+    height: 234px;
+    background-color: #a57fc512;
+}
+
+.reg_form {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.reg_form h4 {
+    margin: 0px;
+    font-weight: normal;
+    font-size: 20px;
+    color: #544a60b0;
+}
+
+.button_reg {
+    height: 37px;
+    margin-top: 10px;
+    background-color: #f2eaf9;
+    color: #544a60b0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#button_reg:hover {
+    background-color: #ead0b4;
+}
+
+:host mat-form-field{
+    width: 260px !important;
+}
+
+:host mat-label{
+    color: #544a60b0 !important;
+    border-color: #544a60b0 !important;
+}
