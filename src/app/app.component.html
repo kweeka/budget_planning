@@ -1,0 +1,8 @@
+<div id="main">
+  <app-header></app-header>
+  <app-main></app-main>
+  <main class="container">
+    <app-income-list [incomes]="incomes$ | async" [label]="'Список доходов'" (select)="onSelect($event)"></app-income-list>
+    <app-income-selected [income]="selected$ | async"></app-income-selected>
+  </main>
+</div>

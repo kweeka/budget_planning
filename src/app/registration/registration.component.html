@@ -1,0 +1,28 @@
+<div class="main_reg_container">
+    <div class="reg_form">
+        <h4>Регистрация</h4>
+        <div class="reg_form_input">
+            <form class="reg_form_input">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Логин</mat-label>
+                    <input matInput #message [(ngModel)]="userName" [ngModelOptions]="{standalone: true}"/>
+                </mat-form-field>
+            </form>
+        </div>
+        <form class="reg_form_input">
+            <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input matInput #message maxlength="30" [(ngModel)]="userEmail" [ngModelOptions]="{standalone: true}"/>
+            </mat-form-field>
+        </form>
+        <form class="reg_form_input">
+            <mat-form-field class="example-full-width">
+                <mat-label>Пароль</mat-label>
+                <input matInput #message maxlength="30" [(ngModel)]="userPassword" [ngModelOptions]="{standalone: true}"/>
+            </mat-form-field>
+        </form>
+        <section>
+            <button mat-stroked-button color="primary" class="button_reg" (click)="registration()">ОК</button>
+        </section>
+    </div>
+</div>
